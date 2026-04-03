@@ -4,12 +4,12 @@ import csv
 import json
 import os
 
-LABEL = "CAITLIN"
+LABEL = "_CAITLIN"
 
 # Config
 csv_file = "scratch/inputs.csv"     # CSV file with playlists
 output_folder = "./docs"            # Folder to save playlist_LABEL.js
-js_file = os.path.join(output_folder, f"playlists_{LABEL}.js")
+js_file = os.path.join(output_folder, f"playlists{LABEL}.js")
 
 # Read CSV
 playlists = []

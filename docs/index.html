@@ -1,46 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Moody Tunes Recommender</title>
-  <style>
-    body { font-family: sans-serif; max-width: 600px; margin: 2rem auto; }
-    label { display: block; margin-top: 1rem; }
-    input[type="range"] { width: 100%; }
-    button { margin-top: 1rem; padding: 0.5rem 1rem; }
-    #results { margin-top: 2rem; font-weight: bold; }
-  </style>
+    <meta charset="UTF-8">
+    <title>Playlist Recommender</title>
 </head>
 <body>
-  <h1>Moody Tunes Recommender</h1>
+    <h1>Playlist Recommender</h1>
+    <div id="results"></div>
 
-  <form id="prefsForm">
-    <label>Happiness: <span id="happinessVal">3</span>
-      <input type="range" id="happiness" min="1" max="5" value="3" oninput="happinessVal.innerText=this.value">
-    </label>
-
-    <label>Angst: <span id="angstVal">3</span>
-      <input type="range" id="angst" min="1" max="5" value="3" oninput="angstVal.innerText=this.value">
-    </label>
-
-    <label>Energy: <span id="energyVal">3</span>
-      <input type="range" id="energy" min="1" max="5" value="3" oninput="energyVal.innerText=this.value">
-    </label>
-
-    <label>Indie: <span id="indieVal">3</span>
-      <input type="range" id="indie" min="1" max="5" value="3" oninput="indieVal.innerText=this.value">
-    </label>
-
-    <label>Sexy: <span id="sexyVal">3</span>
-      <input type="range" id="sexy" min="1" max="5" value="3" oninput="sexyVal.innerText=this.value">
-    </label>
-
-    <button type="submit">Get Recommendations</button>
-  </form>
-
-  <div id="results"></div>
-
-  <script src="playlists.js"></script>
-  <script src="app.js"></script>
+    <script src="playlists.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

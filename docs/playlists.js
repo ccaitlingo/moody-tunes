@@ -1,4 +1,4 @@
-const playlists = [
+const playlists_test = [
   { name: "Go go go", happiness: 4, angst: 3, energy: 5, indie: 1, sexy: 2 },
   { name: "Tap In", happiness: 4, angst: 4, energy: 3, indie: 1, sexy: 4 },
   { name: "Afrobeats", happiness: 5, angst: 1, energy: 3, indie: 3, sexy: 2 },

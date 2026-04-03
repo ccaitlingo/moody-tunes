@@ -22,17 +22,27 @@ const attributes = [
     ['sexy', 'How sexy/sassy are you feeling?']
 ];
 
-// Create sliders dynamically
+// Add low/high labels for each attribute
+const sliderLabels = {
+    happiness: ['sad', 'happy'],
+    angst: ['normal', 'angsty'],
+    energy: ['sleepy', 'FIRED UP'],
+    indie: ['common', 'niche'],
+    sexy: ['platonic', 'sexy af']
+};
+
 function createSliders() {
     const slidersDiv = document.getElementById('sliders');
     attributes.forEach(([attr, labelText]) => {
         const container = document.createElement('div');
         container.className = 'slider-container';
 
+        // Main label
         const label = document.createElement('label');
         label.textContent = labelText;
         label.htmlFor = attr;
 
+        // Slider input
         const slider = document.createElement('input');
         slider.type = 'range';
         slider.id = attr;
@@ -40,6 +50,7 @@ function createSliders() {
         slider.max = 5;
         slider.value = 3; // default
 
+        // Current value display
         const valueDisplay = document.createElement('span');
         valueDisplay.id = `${attr}-value`;
         valueDisplay.textContent = slider.value;
@@ -48,9 +59,20 @@ function createSliders() {
             valueDisplay.textContent = slider.value;
         });
 
+        // Low/High labels
+        const lowHighDiv = document.createElement('div');
+        lowHighDiv.className = 'slider-labels';
+        lowHighDiv.style.display = 'flex';
+        lowHighDiv.style.justifyContent = 'space-between';
+        lowHighDiv.style.fontSize = '0.9em';
+        lowHighDiv.style.marginTop = '5px';
+        lowHighDiv.innerHTML = `<span>${sliderLabels[attr][0]}</span><span>${sliderLabels[attr][1]}</span>`;
+
+        // Append everything
         container.appendChild(label);
         container.appendChild(slider);
         container.appendChild(valueDisplay);
+        container.appendChild(lowHighDiv);
 
         slidersDiv.appendChild(container);
     });

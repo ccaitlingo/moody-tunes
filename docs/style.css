@@ -25,8 +25,9 @@ h1 {
 }
 
 input[type=range] {
-    width: 300px;
-    accent-color: #ff6f61; /* Slider thumb and track color in modern browsers */
+    width: 100%;      /* takes full container width */
+    max-width: 400px; /* caps at 400px on large screens */
+    accent-color: #ff6f61;
 }
 
 input[type=range]::-webkit-slider-thumb {

@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-    color: #ff6f61; /* Bright heading color */
+    color: #1db954; /* Bright heading color */
     text-align: center;
     margin-bottom: 30px;
 }
@@ -27,19 +27,19 @@ h1 {
 input[type=range] {
     width: 100%;      /* takes full container width */
     max-width: 400px; /* caps at 400px on large screens */
-    accent-color: #ff6f61;
+    accent-color: #1db954;
 }
 
 input[type=range]::-webkit-slider-thumb {
-    background: #ff6f61; /* Ensure thumb shows on WebKit browsers */
+    background: #1db954; /* Ensure thumb shows on WebKit browsers */
 }
 
 input[type=range]::-moz-range-thumb {
-    background: #ff6f61; /* Firefox thumb color */
+    background: #1db954; /* Firefox thumb color */
 }
 
 input[type=range]::-ms-thumb {
-    background: #ff6f61; /* IE/Edge thumb color */
+    background: #1db954; /* IE/Edge thumb color */
 }
 
 span {
@@ -51,7 +51,7 @@ button {
     padding: 12px 25px;
     font-size: 18px;
     font-family: 'Fredoka One', sans-serif;
-    background-color: #ff6f61;
+    background-color: #1db954;
     color: #000; /* Black text on bright button */
     border: none;
     border-radius: 10px;

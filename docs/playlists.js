@@ -1,6 +1,7 @@
+const LABEL = '';
 const loaded_playlists = [
   { playlist_name: "Go go go", happiness: 4, angst: 3, energy: 5, indie: 1, sexy: 2 },
-  { playlist_name: "Tap In", happiness: 4, angst: 4, energy: 3, indie: 1, sexy: 4 },
+  { playlist_name: "Tap In", happiness: 4, angst: 4, energy: 5, indie: 1, sexy: 4 },
   { playlist_name: "Afrobeats", happiness: 5, angst: 1, energy: 3, indie: 3, sexy: 2 },
   { playlist_name: "I'm OTW", happiness: 4, angst: 2, energy: 4, indie: 1, sexy: 3 },
   { playlist_name: "HYPE LATINOOO", happiness: 4, angst: 1, energy: 5, indie: 2, sexy: 3 },

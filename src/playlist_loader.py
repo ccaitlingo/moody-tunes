@@ -4,11 +4,11 @@ import csv
 import json
 import os
 
-LABEL = "_CAITLIN"
+LABEL = ""
 
 # Config
-csv_file = "scratch/inputs.csv"     # CSV file with playlists
-output_folder = "./docs"            # Folder to save playlist_LABEL.js
+csv_file = ".\\src\\inputs.csv"      # .csv file with playlists
+output_folder = ".\\docs"            # all info to create webpage stored here
 js_file = os.path.join(output_folder, f"playlists{LABEL}.js")
 
 # Read CSV

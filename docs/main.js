@@ -39,7 +39,6 @@ function createSliders() {
         slider.min = 1;
         slider.max = 5;
         slider.value = 3; // default
-        slider.addEventListener('input', updateRecommendations);
 
         const valueDisplay = document.createElement('span');
         valueDisplay.id = `${attr}-value`;
@@ -84,8 +83,8 @@ function recommendPlaylists(userPrefs, topN = 3) {
         .map(obj => obj.playlist);
 }
 
-// Update recommendations on slider change
-function updateRecommendations() {
+// Display recommendations
+function showRecommendations() {
     const userPrefs = getUserPreferences();
     const topPlaylists = recommendPlaylists(userPrefs);
 
@@ -98,5 +97,6 @@ function updateRecommendations() {
 // Initialize
 window.onload = () => {
     createSliders();
-    updateRecommendations(); // initial recommendation
+    const button = document.getElementById('get-recommendations');
+    button.addEventListener('click', showRecommendations);
 };

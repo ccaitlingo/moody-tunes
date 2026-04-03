@@ -1,0 +1,79 @@
+/* Import fun Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+    font-family: 'Fredoka One', sans-serif;
+    margin: 20px;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+h1 {
+    color: #ff6f61; /* Bright heading color */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.slider-container {
+    margin-bottom: 20px;
+}
+
+.slider-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type=range] {
+    width: 300px;
+    accent-color: #ff6f61; /* Slider thumb and track color in modern browsers */
+}
+
+input[type=range]::-webkit-slider-thumb {
+    background: #ff6f61; /* Ensure thumb shows on WebKit browsers */
+}
+
+input[type=range]::-moz-range-thumb {
+    background: #ff6f61; /* Firefox thumb color */
+}
+
+input[type=range]::-ms-thumb {
+    background: #ff6f61; /* IE/Edge thumb color */
+}
+
+span {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    font-family: 'Fredoka One', sans-serif;
+    background-color: #ff6f61;
+    color: #000; /* Black text on bright button */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #ff3b2f;
+    color: #fff;
+}
+
+#results {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #fff; /* White text for results */
+}
+
+#results ol {
+    padding-left: 20px;
+}
+
+#results li {
+    margin-bottom: 10px;
+}

@@ -1,9 +1,16 @@
+// Wait until the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", function() {
   const form = document.getElementById("prefsForm");
   const resultsDiv = document.getElementById("results");
 
+  // Show default text initially
+  resultsDiv.innerHTML = "<p>Waiting for your input…</p>";
+
   form.addEventListener("submit", function(e) {
     e.preventDefault();
+
+    // Show temporary text while computing
+    resultsDiv.innerHTML = "<p>Generating recommendations...</p>";
 
     // Get user preferences from sliders
     const userPrefs = {
@@ -25,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
       .sort((a,b) => score(a) - score(b))
       .slice(0,3);
 
-    // Show results clearly
+    // Show final results
     if(topPlaylists.length === 0) {
       resultsDiv.innerHTML = "<p>No playlists found.</p>";
     } else {

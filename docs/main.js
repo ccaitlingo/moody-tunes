@@ -1,6 +1,6 @@
 class Playlist {
-    constructor(name, happiness, angst, energy, indie, sexy) {
-        this.name = name;
+    constructor(playlist_name, happiness, angst, energy, indie, sexy) {
+        this.playlist_name = playlist_name;
         this.attributes = {
             happiness: parseInt(happiness),
             angst: parseInt(angst),
@@ -12,7 +12,7 @@ class Playlist {
 }
 
 // Convert raw playlist objects to Playlist instances
-const playlists = playlists_test.map(p => new Playlist(p.name, p.happiness, p.angst, p.energy, p.indie, p.sexy));
+const playlists = loaded_playlists.map(p => new Playlist(p.playlist_name, p.happiness, p.angst, p.energy, p.indie, p.sexy));
 
 const attributes = [
     ['happiness', 'How happy are you feeling?'],
@@ -90,7 +90,7 @@ function showRecommendations() {
 
     const resultDiv = document.getElementById('results');
     resultDiv.innerHTML = '<h2>Top 3 Recommended Playlists:</h2><ol>' +
-        topPlaylists.map(p => `<li>${p.name}</li>`).join('') +
+        topPlaylists.map(p => `<li>${p.playlist_name}</li>`).join('') +
         '</ol>';
 }
 

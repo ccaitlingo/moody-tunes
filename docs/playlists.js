@@ -39,5 +39,10 @@ const loaded_playlists = [
   { playlist_name: "en Espanol", happiness: 4, angst: 1, energy: 4, indie: 2, sexy: 3 },
   { playlist_name: "Mvmt #...", happiness: 3, angst: 2, energy: 3, indie: 3, sexy: 1 },
   { playlist_name: "Summer Latin Pop", happiness: 5, angst: 1, energy: 4, indie: 2, sexy: 3 },
-  { playlist_name: "Kpop Favorites", happiness: 4, angst: 2, energy: 4, indie: 2, sexy: 3 }
+  { playlist_name: "Kpop Favorites", happiness: 4, angst: 2, energy: 4, indie: 2, sexy: 3 },
+  { playlist_name: "juicy r&b", happiness: 3, angst: 3, energy: 3, indie: 1, sexy: 4 },
+  { playlist_name: "Ridiculously Happy", happiness: 5, angst: 1, energy: 3, indie: 1, sexy: 1 },
+  { playlist_name: "salsa", happiness: 4, angst: 1, energy: 3, indie: 4, sexy: 3 },
+  { playlist_name: "sweet love", happiness: 5, angst: 1, energy: 2, indie: 2, sexy: 3 },
+  { playlist_name: "Confidence of a Queen", happiness: 3, angst: 5, energy: 5, indie: 2, sexy: 5 }
 ];

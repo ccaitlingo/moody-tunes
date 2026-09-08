@@ -13,8 +13,9 @@ No AI, just crunching and comparing numbers.
 2. Fill out inputs.csv
 3. Run `playlist_loader.py`. This will load inputs.csv into a Javascript-friendly format to incorporate your playlists into the web app.
 4. Push your changes
-5. Ensure your web app is built from the correct directory by going to Settings > Pages > Build and Deployment > Branch > change the configuration to be `main` `/docs`.
 5. Go to https://<your_github_username>.github.io/moody-tunes/
+#### Note
+If the web app does not render on the first try, ensure your GitHub pages are built from the correct directory by going to Settings > Pages > Build and Deployment > Branch > change the configuration to be `main` `/docs`. Also, it might take a few minutes to render after recently pushing changes.
 
 ### Have fun!
 
